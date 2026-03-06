@@ -1,0 +1,107 @@
+{
+  "projectType": "saas",
+  "projectName": "EGEL Simulator",
+  "projectDescription": "A desktop exam simulator application built with Electron, React, and TypeScript for practicing EGEL exam questions with real-time feedback.",
+  "theme": "almond",
+  "primaryColor": "#16a34a",
+  "lightColor": "#dcfce7",
+  "darkColor": "#14532d",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "installation",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/authentication",
+              "features/exam-modes",
+              "features/question-bank",
+              "features/history-tracking"
+            ]
+          },
+          {
+            "group": "User Guide",
+            "pages": [
+              "guide/setup-exam",
+              "guide/practice-mode",
+              "guide/simulation-mode",
+              "guide/viewing-results"
+            ]
+          },
+          {
+            "group": "Architecture",
+            "pages": [
+              "architecture/overview",
+              "architecture/electron-main",
+              "architecture/react-renderer",
+              "architecture/database"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Developer Guide",
+        "groups": [
+          {
+            "group": "Development",
+            "pages": [
+              "development/setup",
+              "development/project-structure",
+              "development/building"
+            ]
+          },
+          {
+            "group": "Components",
+            "pages": [
+              "components/question-component",
+              "components/state-management",
+              "components/ipc-handlers"
+            ]
+          },
+          {
+            "group": "API Reference",
+            "pages": [
+              "api/ipc-channels",
+              "api/database-models",
+              "api/stores"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "License-based authentication system",
+    "Practice and simulation exam modes",
+    "Real-time timer with countdown",
+    "Question bank with feedback",
+    "History tracking and statistics",
+    "Offline desktop application",
+    "SQLite database integration",
+    "React + TypeScript UI"
+  ],
+  "publicApiSurface": [
+    "IPC: license:verify-key",
+    "IPC: license:get-status",
+    "Page: /auth - Authentication",
+    "Page: /home - Home dashboard",
+    "Page: /setup - Exam configuration",
+    "Page: /test - Exam simulator",
+    "Page: /history - Results history",
+    "Store: useSetupStore",
+    "Store: useHistoryStore",
+    "Store: useLicenseStore",
+    "Store: useQuestions",
+    "Component: Question",
+    "Database: LicenseActivation model"
+  ]
+}
